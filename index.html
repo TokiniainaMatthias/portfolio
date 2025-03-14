@@ -1,155 +1,193 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Tokiniaina Mathias Randrianilaina</title>
-    <style>
-        @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css'); /* Importation des icônes */
-        
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #B0C4DE; /* Couleur nude */
-            text-align: center;
-            padding: 20px;
-        }
-        .container {
-            max-width: 600px;
-            background: white;
-            padding: 20px;
-            margin: auto;
-            border-radius: 10px;
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-        }
-        h1 {
-            color: #333;
-        }
-        .document-list {
-            list-style: none;
-            padding: 0;
-        }
-        .document-list li {
-            margin: 15px 0;
-        }
-        .download-btn {
-            display: inline-block;
-            padding: 10px 15px;
-            font-size: 16px;
-            background-color: #007BFF;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-            transition: background 0.3s;
-        }
-        .download-btn:hover {
-            background-color: #0056b3;
-        }
-        .badge {
-            margin-top: 20px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        .badge img {
-            width: 120px;
-            height: 120px;
-        }
-        .badge-btn {
-            margin-top: 10px;
-            display: inline-block;
-            padding: 10px 15px;
-            font-size: 14px;
-            background-color: #28a745;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-            transition: background 0.3s;
-        }
-        .badge-btn:hover {
-            background-color: #218838;
-        }
-        .contact-section {
-            margin-top: 20px;
-            padding: 10px;
-        }
-        .contact-section a {
-            color: #007BFF;
-            text-decoration: none;
-            font-weight: bold;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 10px;
-            margin: 10px 0;
-            font-size: 18px;
-        }
-        .contact-section a:hover {
-            text-decoration: underline;
-        }
-        .contact-section i {
-            font-size: 22px;
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Tokiniaina Mathias Randrianilaina</title>
+  <style>
+    @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css'); /* Importation des icônes */
 
-        /* New styling for name and profile picture */
-        .profile {
-            margin-top: 20px;
-        }
-        .profile img {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            border: 2px solid #007BFF;
-        }
-        .profile h2 {
-            margin-top: 10px;
-            font-size: 24px;
-            color: #333;
-        }
-    </style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #B0C4DE; /* Bleu nude */
+      margin: 0;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      max-width: 1000px;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      overflow: hidden;
+    }
+
+    .left-part, .right-part {
+      padding: 20px;
+      flex: 1;
+    }
+
+    /* Partie gauche */
+    .left-part {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .profile {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+    .profile img {
+      border-radius: 50%;
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      border: 3px solid #007BFF;
+      margin-right: 15px;
+    }
+    .name {
+      font-size: 24px;
+      font-weight: bold;
+      color: #333;
+    }
+    h1 {
+      color: #333;
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+    .document-list {
+      list-style: none;
+      padding: 0;
+      width: 100%;
+    }
+    .document-list li {
+      margin: 15px 0;
+    }
+    .download-btn {
+      display: inline-block;
+      padding: 10px 15px;
+      font-size: 16px;
+      background-color: #007BFF;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background 0.3s;
+    }
+    .download-btn:hover {
+      background-color: #0056b3;
+    }
+
+    /* Partie droite */
+    .right-part {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .welcome-message {
+      font-size: 28px;
+      font-weight: bold;
+      color: #333;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    .badge {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .badge img {
+      width: 120px;
+      height: 120px;
+    }
+    .badge-btn {
+      margin-top: 10px;
+      padding: 10px 15px;
+      font-size: 14px;
+      background-color: #28a745;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background 0.3s;
+    }
+    .badge-btn:hover {
+      background-color: #218838;
+    }
+
+    /* Contacts en bas, affichés horizontalement */
+    .contact-section {
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+    .contact-section a {
+      color: #007BFF;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 18px;
+      display: flex;
+      align-items: center;
+    }
+    .contact-section a:hover {
+      text-decoration: underline;
+    }
+    .contact-section i {
+      font-size: 22px;
+      margin-right: 5px;
+    }
+  </style>
 </head>
 <body>
 
-    <div class="container">
-        <!-- Profile Section -->
-        <div class="profile">
-            <img src="Photo1.JPG" alt="Photo de Tokiniaina Mathias Randrianilaina"> <!-- Remplacez l'URL de l'image par votre propre photo -->
-            <h2>Tokiniaina Mathias Randrianilaina</h2>
-        </div>
-
-        <h1>Bienvenue sur mon portfolio</h1>
-        <p>Voici mes documents :</p>
-
-        <ul class="document-list">
-            <li><a href="PF/CV-Tokiniaina.pdf" download class="download-btn">📄 Télécharger mon CV</a></li>
-            <li><a href="Relevés de notes.zip" download class="download-btn">📜 Télécharger mes relevés de notes</a></li>
-            <li><a href="Diplômes et Attestations.zip" download class="download-btn">🎓 Télécharger mes diplômes et attestations</a></li>
-            <li><a href="PF-Tokiniaina Mathias Randrianilaina.zip" download class="download-btn">📦 Télécharger mon portfolio complet</a></li>
-        </ul>
-
-        <!-- Badge Section -->
-        <div class="badge">
-            <p>🏆 Mon badge de certification :</p>
-            <a href="https://api.badgr.io/public/assertions/Q18HZe6ZRzqYD9VoT2nS8g?identity__email=tokiniainamatthias%40gmail.com" target="_blank">
-                <img src="https://api.badgr.io/public/assertions/Q18HZe6ZRzqYD9VoT2nS8g/image" alt="Badge STEM">
-            </a>
-            <a href="https://api.badgr.io/public/assertions/Q18HZe6ZRzqYD9VoT2nS8g?identity__email=tokiniainamatthias%40gmail.com" target="_blank" class="badge-btn">🔗 Voir mon badge</a>
-        </div>
-
-        <!-- Contact Section -->
-        <div class="contact-section">
-            <h2>📬 Contacts</h2>
-            <a href="mailto:tokiniainamatthias@gmail.com">
-                <i class="fas fa-envelope"></i> tokiniainamatthias@gmail.com
-            </a>
-            <a href="https://www.linkedin.com/in/tokiniaina-mathias-2073b21a6" target="_blank">
-                <i class="fab fa-linkedin"></i> LinkedIn
-            </a>
-            <a href="https://wa.me/261327675340" target="_blank">
-                <i class="fab fa-whatsapp"></i> WhatsApp
-            </a>
-        </div>
-
+  <div class="container">
+    <!-- Partie gauche : Photo, nom et liens de téléchargement -->
+    <div class="left-part">
+      <div class="profile">
+        <img src="Photo1.JPG" alt="Photo de profil">
+        <div class="name">Tokiniaina Mathias Randrianilaina</div>
+      </div>
+      <h1>Documents à télécharger</h1>
+      <ul class="document-list">
+        <li><a href="PF/CV-Tokiniaina.pdf" download class="download-btn">📄 Télécharger mon CV</a></li>
+        <li><a href="Relevés de notes.zip" download class="download-btn">📜 Télécharger mes relevés de notes</a></li>
+        <li><a href="Diplômes et Attestations.zip" download class="download-btn">🎓 Télécharger mes diplômes et attestations</a></li>
+        <li><a href="PF-Tokiniaina Mathias Randrianilaina.zip" download class="download-btn">📦 Télécharger mon portfolio complet</a></li>
+      </ul>
     </div>
+
+    <!-- Partie droite : Badge et mot de bienvenue stylé -->
+    <div class="right-part">
+      <div class="welcome-message">Bienvenue dans mon univers, hihi !</div>
+      <div class="badge">
+        <p>🏆 Mon badge de certification :</p>
+        <a href="https://api.badgr.io/public/assertions/Q18HZe6ZRzqYD9VoT2nS8g?identity__email=tokiniainamatthias%40gmail.com" target="_blank">
+          <img src="https://api.badgr.io/public/assertions/Q18HZe6ZRzqYD9VoT2nS8g/image" alt="Badge STEM">
+        </a>
+        <a href="https://api.badgr.io/public/assertions/Q18HZe6ZRzqYD9VoT2nS8g?identity__email=tokiniainamatthias%40gmail.com" target="_blank" class="badge-btn">🔗 Voir mon badge</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Section Contacts en bas, affichée horizontalement -->
+  <div class="contact-section">
+    <a href="mailto:tokiniainamatthias@gmail.com">
+      <i class="fas fa-envelope"></i> Email
+    </a>
+    <a href="https://www.linkedin.com/in/tokiniaina-mathias-2073b21a6" target="_blank">
+      <i class="fab fa-linkedin"></i> LinkedIn
+    </a>
+    <a href="https://wa.me/261327675340" target="_blank">
+      <i class="fab fa-whatsapp"></i> WhatsApp
+    </a>
+  </div>
 
 </body>
 </html>
