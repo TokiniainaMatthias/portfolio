@@ -5,9 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio - Tokiniaina Mathias Randrianilaina</title>
     <style>
+        @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css'); /* Importation des icônes */
+        
         body {
             font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
+            background-color: #E3C6A6; /* Couleur nude */
             text-align: center;
             padding: 20px;
         }
@@ -70,6 +72,23 @@
             margin-top: 20px;
             padding: 10px;
         }
+        .contact-section a {
+            color: #007BFF;
+            text-decoration: none;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            margin: 10px 0;
+            font-size: 18px;
+        }
+        .contact-section a:hover {
+            text-decoration: underline;
+        }
+        .contact-section i {
+            font-size: 22px;
+        }
     </style>
 </head>
 <body>
@@ -97,8 +116,15 @@
         <!-- Contact Section -->
         <div class="contact-section">
             <h2>📬 Contact</h2>
-            <p>Email : <a href="mailto:tokiniainamatthias@gmail.com">tokiniainamatthias@gmail.com</a></p>
-            <p>LinkedIn : <a href="www.linkedin.com/in/tokiniaina-mathias-2073b21a6" target="_blank">Mon profil</a></p>
+            <a href="mailto:tokiniainamatthias@gmail.com">
+                <i class="fas fa-envelope"></i> tokiniainamatthias@gmail.com
+            </a>
+            <a href="https://www.linkedin.com/in/tokiniaina-mathias-2073b21a6" target="_blank">
+                <i class="fab fa-linkedin"></i> LinkedIn
+            </a>
+            <a href="https://wa.me/261327675340" target="_blank">
+                <i class="fab fa-whatsapp"></i> WhatsApp
+            </a>
         </div>
 
     </div>
