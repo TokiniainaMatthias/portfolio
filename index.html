@@ -3,18 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio de Tokiniaina Mathias Randrianilaina</title>
+    <title>Portfolio - Tokiniaina Mathias Randrianilaina</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+            padding: 20px;
+        }
+        .container {
+            max-width: 600px;
+            background: white;
+            padding: 20px;
+            margin: auto;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        h1 {
+            color: #333;
+        }
+        .document-list {
+            list-style: none;
+            padding: 0;
+        }
+        .document-list li {
+            margin: 15px 0;
+        }
+        .download-btn {
+            display: inline-block;
+            padding: 10px 15px;
+            font-size: 16px;
+            background-color: #007BFF;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        .download-btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
 </head>
 <body>
-    <h1>Bienvenue sur mon portfolio</h1>
-    <p>Voici mes documents :</p>
-    <ul>
-        <li><a href="PF/CV-Tokiniaina.pdf" download>📄 Télécharger mon CV</a></li>
-        <li><a href="Relevé_L3.pdf" download>📜 Télécharger mon relevé de notes L3</a></li>
-        <li><a href="Diplôme_L3.pdf" download>🎓 Télécharger mon diplôme L3</a></li>
-    </ul>
-   <ul>
-    <li><a href="PF-Tokiniaina Mathias Randrianilaina.zip" download>📦 Télécharger mon portfolio complet</a></li>
-</ul>
+
+    <div class="container">
+        <h1>Bienvenue sur mon portfolio</h1>
+        <p>Voici mes documents :</p>
+
+        <ul class="document-list">
+            <li><a href="PF/CV-Tokiniaina.pdf" download class="download-btn">📄 Télécharger mon CV</a></li>
+            <li><a href="Relevé_L3.pdf" download class="download-btn">📜 Télécharger mon relevé de notes L3</a></li>
+            <li><a href="Diplôme_L3.pdf" download class="download-btn">🎓 Télécharger mon diplôme L3</a></li>
+            <li><a href="PF-Tokiniaina_Mathias_Randrianilaina.zip" download class="download-btn">📦 Télécharger mon portfolio complet</a></li>
+        </ul>
+    </div>
+
 </body>
 </html>
