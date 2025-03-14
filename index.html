@@ -42,6 +42,34 @@
         .download-btn:hover {
             background-color: #0056b3;
         }
+        .badge {
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .badge img {
+            width: 120px;
+            height: 120px;
+        }
+        .badge-btn {
+            margin-top: 10px;
+            display: inline-block;
+            padding: 10px 15px;
+            font-size: 14px;
+            background-color: #28a745;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        .badge-btn:hover {
+            background-color: #218838;
+        }
+        .contact-section {
+            margin-top: 20px;
+            padding: 10px;
+        }
     </style>
 </head>
 <body>
@@ -52,10 +80,27 @@
 
         <ul class="document-list">
             <li><a href="PF/CV-Tokiniaina.pdf" download class="download-btn">📄 Télécharger mon CV</a></li>
-            <li><a href="Relevés de notes.zip" download class="download-btn">📜 Télécharger mes relevés de notes </a></li>
-            <li><a href="Diplômes et Attestations.zip" download class="download-btn">🎓 Télécharger mes diplômes et attestations </a></li>
+            <li><a href="Relevés de notes.zip" download class="download-btn">📜 Télécharger mes relevés de notes</a></li>
+            <li><a href="Diplômes et Attestations.zip" download class="download-btn">🎓 Télécharger mes diplômes et attestations</a></li>
             <li><a href="PF-Tokiniaina Mathias Randrianilaina.zip" download class="download-btn">📦 Télécharger mon portfolio complet</a></li>
         </ul>
+
+        <!-- Badge Section -->
+        <div class="badge">
+            <p>🏆 Mon badge de certification :</p>
+            <a href="https://api.badgr.io/public/assertions/Q18HZe6ZRzqYD9VoT2nS8g?identity__email=tokiniainamatthias%40gmail.com" target="_blank">
+                <img src="https://api.badgr.io/public/assertions/Q18HZe6ZRzqYD9VoT2nS8g/image" alt="Badge STEM">
+            </a>
+            <a href="https://api.badgr.io/public/assertions/Q18HZe6ZRzqYD9VoT2nS8g?identity__email=tokiniainamatthias%40gmail.com" target="_blank" class="badge-btn">🔗 Voir mon badge</a>
+        </div>
+
+        <!-- Contact Section -->
+        <div class="contact-section">
+            <h2>📬 Contact</h2>
+            <p>Email : <a href="mailto:tokiniainamatthias@gmail.com">tokiniainamatthias@gmail.com</a></p>
+            <p>LinkedIn : <a href="https://www.linkedin.com/in/ton-profil" target="_blank">Mon profil</a></p>
+        </div>
+
     </div>
 
 </body>
