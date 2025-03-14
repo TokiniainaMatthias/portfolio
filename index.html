@@ -28,6 +28,7 @@
       border-radius: 10px;
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
       overflow: hidden;
+      flex-wrap: wrap; /* Permet à la disposition de se réorganiser sur les petits écrans */
     }
 
     .left-part, .right-part {
@@ -145,6 +146,48 @@
       font-size: 22px;
       margin-right: 5px;
     }
+
+    /* Media Query pour rendre le portfolio responsive */
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+        max-width: 100%;
+      }
+      .left-part, .right-part {
+        flex: none;
+        width: 100%;
+      }
+      .profile img {
+        width: 100px;
+        height: 100px;
+      }
+      .name {
+        font-size: 20px;
+      }
+      .welcome-message {
+        font-size: 24px;
+      }
+      .badge img {
+        width: 100px;
+        height: 100px;
+      }
+      .download-btn {
+        font-size: 14px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .name {
+        font-size: 18px;
+      }
+      .welcome-message {
+        font-size: 20px;
+      }
+      .download-btn {
+        font-size: 12px;
+      }
+    }
+
   </style>
 </head>
 <body>
